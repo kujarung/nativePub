@@ -54,7 +54,7 @@ const btn = StyleSheet.create({
   },      
   bottomBtnCon: {
     position: 'absolute',
-    bottom: 30,
+    bottom: 20,
     left: 20,
     width: width - 40
   }, 

@@ -24,9 +24,8 @@ const RenderTabBar = (props) => {
         backgroundColor: '#fff',
         shadowColor: 'transparent',
         shadowRadius: 0,
-        shadowOffset: {
-            height: 0,
-        },
+        shadowOffset: { height: 0, width: 0 },
+        elevation: 0,
         borderBottomWidth: 0,
         borderBottomColor: 'transparent'  
       }}

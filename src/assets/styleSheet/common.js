@@ -9,8 +9,8 @@ const common = StyleSheet.create({
   },
   stackWidthContainer: {
     width,
-    height: height - 90,
-    backgroundColor: '#FDFDFD',
+    height: height - 80,
+    backgroundColor: 'white',
   },
   fullHeight: {
     height
@@ -52,7 +52,6 @@ const common = StyleSheet.create({
   },
   h6: {
     fontSize: 14,
-    lineHeight: 25,
   },
   h7: {
     fontSize: 12,
@@ -101,6 +100,10 @@ const common = StyleSheet.create({
     width: 20,
     height: 20
   },
+  iconBig: {
+    width: 24,
+    height: 24,
+  },
   restIcon: {
     width: 17,
     height: 14,
@@ -126,7 +129,7 @@ const common = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
-    elevation: 16,    
+    elevation: 6,    
   },
   contentCon: {
     paddingLeft: 20,

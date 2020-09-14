@@ -12,7 +12,8 @@ const sign = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 70,
+    marginBottom: 30,
+    marginTop: 30
   },
   bttomContainer: {
     left: 20,
@@ -24,11 +25,11 @@ const sign = StyleSheet.create({
     paddingTop: 40,
   },
   resultContainer: {
-    height,
+    height : height - 20,
     paddingTop: '20%',
     paddingLeft: 20,
     paddingRight: 20,
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   avatarImage: {
     width: 130,

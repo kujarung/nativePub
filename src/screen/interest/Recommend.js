@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, ScrollView, FlatList, TouchableHighlight, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView, FlatList, TouchableOpacity } from 'react-native';
 import { BtnPrimaryBac } from 'screen/components/BtnPrimaryBac'
 import color from 'assets/styleSheet/color';
 import common from 'assets/styleSheet/common';
@@ -150,7 +150,7 @@ export const Recommend = () => {
 
         <View style={[common.contentCon, {marginBottom: 25}]}>
           <Text style={[common.h5, common.fontBold]}>
-            천 콘텐츠
+            추천 콘텐츠
           </Text>
         </View>
 

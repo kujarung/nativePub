@@ -9,29 +9,27 @@ import { xbtn } from 'assets/styleSheet/imageUtils';
 import common from 'assets/styleSheet/common';
 
 export const CustomDrawerContent = (props) =>  {
-  console.log(props)
+  closeDrawer = () => {
+    props.navigation.closeDrawer()
+  }
+
   return (
     <DrawerContentScrollView {...props}>
-      <DrawerItem
-        label={({}) => (
-          <TouchableOpacity >
-            <View style={{marginBottom: 24}}>
-              <View style={{marginBottom: 54}}>
-                <Image source={xbtn} style={[common.iconSize, {justifyContent: 'flex-end'}]}/>
-              </View>
-              <View>
-                <Text style={[common.h5, common.fontBold]}>
-                  오늘의 콘텐츠
-                </Text>
-                <View style={common.primarySmallLine}/>
-              </View>          
-            </View>
-          </TouchableOpacity>
-        )}
-      />
+      <TouchableOpacity onPress={closeDrawer} style={{alignItems: 'flex-end'}}>
+        <View style={{marginTop: 20, marginRight: 20}}>
+          <Image source={xbtn} style={{width: 20, height: 20}} contain/>
+        </View>
+      </TouchableOpacity>      
+      <View style={{marginBottom: 24, marginTop: 40, marginLeft: 20}}>
+        <Text style={[common.h5, common.fontBold]}>
+          오늘의 콘텐츠
+        </Text>
+        <View style={common.primarySmallLine}/>
+      </View>          
       <DrawerItemList
-        activeBackgroundColor={'#F3EDE6'}
+        activeBackgroundColor={'transparent'}
         activeTintColor={'black'}
+        labelStyle={{fontSize: 18, color: '#777777', marginHorizontal: 16}}
         {...props}
       />
     </DrawerContentScrollView>

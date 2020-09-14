@@ -6,8 +6,6 @@ const interest = StyleSheet.create({
   cardContainer: {
     backgroundColor: 'white',
     borderRadius: 5,
-    paddingLeft: 10,
-    paddingRight: 10,
     paddingTop: 10,
     paddingBottom: 10,
     shadowColor: "#000",
@@ -17,10 +15,13 @@ const interest = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
-    elevation: 16,
-    marginTop: 10
+    elevation: 6,
+    marginTop: 10,
+    marginBottom: 5
   },
   bottomCard: {
+    paddingLeft: 10,
+    paddingRight: 10,
     paddingTop: 16,
     paddingBottom: 10,
     backgroundColor: color.likeWhite
@@ -35,7 +36,11 @@ const interest = StyleSheet.create({
     borderRadius: 15
   },
   innerCard: {
+    paddingLeft: 10, 
+    paddingRight: 10,
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   levelTxt: {
     borderRadius: 15,

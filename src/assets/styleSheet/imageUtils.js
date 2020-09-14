@@ -16,3 +16,11 @@ export const rectangle = require('../img/Rectangle.png');
 
 export const zoom = require('../img/zoom.png');
 export const xbtn = require('../img/back.png');
+
+export const search = require('../img/search.png');
+export const sidelist = require('../img/sidelist.png');
+export const activity = require('../img/activity.png');
+
+export const base = require('../img/base.png');
+export const base2 = require('../img/base2.png');
+export const ic_percent = require('../img/ic_percent.png');

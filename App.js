@@ -10,6 +10,7 @@ import React from 'react';
 import {
   View,
   Button,
+  Text,
   SafeAreaView,
 } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -24,18 +25,11 @@ import { PretestIntro } from 'screen/pretest/PretestIntro'
 import PretestStack from 'screen/pretest/PretestStack'
 import InterestStack from 'screen/interest/InterestStack';
 import { CustomDrawerContent } from 'screen/components/CustomDrawerContent'
+import { Header } from 'screen/components/Header';
 
 function HomeScreen({ navigation }) {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
-      <View>
-        <Button
-          onPress={() => navigation.navigate('pretestStack')}
-          title="Go to notifications"
-        />
-      </View>
-    </SafeAreaView>
-
+    <Header/>
   );
 }
 

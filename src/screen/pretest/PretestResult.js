@@ -10,7 +10,7 @@ import { icRest } from 'assets/styleSheet/imageUtils';
 export const PretestResult = () => {
 
   return (
-    <ScrollView style={[common.stackWidthContainer, {marginBottom: 30}]}>
+    <ScrollView style={[common.stackWidthContainer]}>
       <View style={pretest.contentContainer}>
         <Text style={[common.h2, {marginBottom: 10}]}>
           Result
@@ -40,7 +40,7 @@ export const PretestResult = () => {
           </TouchableOpacity>
         </View>
         
-        <View style={[common.textBox, {marginBottom: 15}]}>
+        <View style={[common.textBox, {marginBottom: 20}]}>
           <View style={{marginBottom: 10}}>
             <Image source={icRest} style={common.restIcon}/>
           </View>
@@ -50,8 +50,10 @@ export const PretestResult = () => {
             닉네임님의 <Text style={common.fontBold}>응답</Text>을 선택해 주세요!
           </Text>           
         </View>
-        
-        <BtnPrimaryBac btnTxt={'설문조사 하기'}/>
+
+        <View style={{marginBottom: 30}}>
+          <BtnPrimaryBac btnTxt={'설문조사 하기'}/>
+        </View>
       </View>
     </ScrollView>
   )

@@ -5,7 +5,7 @@ const { width, height } = Dimensions.get('window');
 const intro = StyleSheet.create({
   mainBackImg: {
     width, 
-    height, 
+    height,
     position:'absolute', 
     top:0,
   },
@@ -17,13 +17,10 @@ const intro = StyleSheet.create({
     paddingBottom: 35,
     paddingLeft: 30,
     paddingRight: 30,
-    position: 'absolute',
-    bottom: 90,
     left: 20,
     width: width - 40,
     borderRadius: 5,
     backgroundColor: 'white',
-    height: height - 70 - 90,
   },
   innerBottomText: {
     position: 'absolute',
@@ -34,7 +31,7 @@ const intro = StyleSheet.create({
     textAlign: 'center',
     width: 150,
     position: 'absolute',
-    top: 55,
+    top: 90,
     left: '50%',
     transform: [{translateX: -40}],
   },
