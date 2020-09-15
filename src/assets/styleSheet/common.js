@@ -1,6 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import color from './color';
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const common = StyleSheet.create({
   mainContainer: {
@@ -9,14 +9,14 @@ const common = StyleSheet.create({
   },
   stackWidthContainer: {
     width,
-    height: height - 80,
+    height: height - 60,
     backgroundColor: 'white',
   },
   fullHeight: {
-    height
+    height,
   },
   fullWidth: {
-    width
+    width,
   },
   Xcenter: {
     justifyContent: 'center',
@@ -24,12 +24,18 @@ const common = StyleSheet.create({
   Ycenter: {
     alignItems: 'center',
   },
+  flexRow: {
+    flexDirection: 'row',
+  },
   XYcenter: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   Xeq: {
     justifyContent: 'space-between',
+  },
+  Xaround: {
+    justifyContent: 'space-around',
   },
   h2: {
     fontSize: 40,
@@ -44,11 +50,11 @@ const common = StyleSheet.create({
     fontWeight: 'bold',
   },
   h4: {
-    fontSize: 24
+    fontSize: 24,
   },
   h5: {
     fontSize: 20,
-    lineHeight: 24
+    lineHeight: 24,
   },
   h6: {
     fontSize: 14,
@@ -60,31 +66,31 @@ const common = StyleSheet.create({
     fontWeight: '700',
   },
   fontThin: {
-    fontWeight: '200'
+    fontWeight: '200',
   },
   textCenter: {
     textAlign: 'center',
   },
   primaryEmasis: {
     color: color.primary,
-    textDecorationLine: "underline",
-    textDecorationStyle: "solid",
-    textDecorationColor: color.primary
+    textDecorationLine: 'underline',
+    textDecorationStyle: 'solid',
+    textDecorationColor: color.primary,
   },
   checkContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 17
+    marginBottom: 17,
   },
   checkImage: {
     width: 16,
     height: 16,
-    marginRight: 13
+    marginRight: 13,
   },
   checkTxt: {
     fontSize: 12,
     fontWeight: 'bold',
-    color: 'black'
+    color: 'black',
   },
   uncheckedTxt: {
     fontSize: 12,
@@ -94,11 +100,11 @@ const common = StyleSheet.create({
     width: 30,
     height: 3,
     backgroundColor: color.primary,
-    bottom: -10
+    bottom: -10,
   },
   iconSize: {
     width: 20,
-    height: 20
+    height: 20,
   },
   iconBig: {
     width: 24,
@@ -110,7 +116,7 @@ const common = StyleSheet.create({
   },
   backBtnContainer: {
     left: 20,
-    position: 'absolute'
+    position: 'absolute',
   },
   percentTxt: {
     fontSize: 56,
@@ -122,20 +128,19 @@ const common = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     backgroundColor: 'white',
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
     },
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
-    elevation: 6,    
+    elevation: 6,
   },
   contentCon: {
     paddingLeft: 20,
-    paddingRight: 20
-  }
-})
-
+    paddingRight: 20,
+  },
+});
 
 export default common;

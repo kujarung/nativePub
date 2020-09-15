@@ -1,14 +1,13 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import color from './color';
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const interest = StyleSheet.create({
   cardContainer: {
     backgroundColor: 'white',
     borderRadius: 5,
     paddingTop: 10,
-    paddingBottom: 10,
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -17,14 +16,14 @@ const interest = StyleSheet.create({
     shadowRadius: 4.65,
     elevation: 6,
     marginTop: 10,
-    marginBottom: 5
+    marginBottom: 5,
   },
   bottomCard: {
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 16,
     paddingBottom: 10,
-    backgroundColor: color.likeWhite
+    backgroundColor: color.likeWhite,
   },
   bottomTxt: {
     height: 28,
@@ -33,14 +32,14 @@ const interest = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 4,
     marginRight: 10,
-    borderRadius: 15
+    borderRadius: 15,
   },
   innerCard: {
-    paddingLeft: 10, 
+    paddingLeft: 10,
     paddingRight: 10,
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   levelTxt: {
     borderRadius: 15,
@@ -49,22 +48,22 @@ const interest = StyleSheet.create({
     paddingBottom: 3,
     paddingTop: 3,
     borderWidth: 1,
-    borderColor: color.borderGray
+    borderColor: color.borderGray,
   },
   innerImage: {
     width: 100,
     height: 80,
-    borderRadius: 3
+    borderRadius: 3,
   },
   topDesc: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 10
+    marginBottom: 10,
   },
   listContainer: {
     flexDirection: 'row',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
   },
   selectItem: {
     paddingTop: 5,
@@ -75,30 +74,29 @@ const interest = StyleSheet.create({
     marginBottom: 10,
     borderWidth: 1,
     borderColor: color.borderGray,
-    borderRadius: 20
+    borderRadius: 20,
   },
   selectItemFont: {
-    fontSize: 16
+    fontSize: 16,
   },
   selectedFont: {
     fontWeight: 'bold',
-    color: color.primary
+    color: color.primary,
   },
   selectedCotainer: {
-    borderColor: color.primary
+    borderColor: color.primary,
   },
   autoCompleteWarp: {
     paddingLeft: 15,
-    paddingRight: 15
+    paddingRight: 15,
   },
   autoCompleteContainer: {
     justifyContent: 'space-between',
     flexDirection: 'row',
     marginBottom: 17,
-    marginBottom: 15,
     borderBottomColor: color.borderGray,
-    borderBottomWidth: 1
-  }
-})
+    borderBottomWidth: 1,
+  },
+});
 
 export default interest;

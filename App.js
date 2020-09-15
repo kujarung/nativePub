@@ -20,10 +20,11 @@ import {PretestIntro} from 'screen/pretest/PretestIntro';
 import PretestStack from 'screen/pretest/PretestStack';
 import InterestStack from 'screen/interest/InterestStack';
 import {CustomDrawerContent} from 'screen/components/CustomDrawerContent';
-import {Header} from 'screen/components/Header';
+import {MainHome} from 'screen/daily/MainHome';
+import {Daily} from 'screen/daily/Daily';
 
 function HomeScreen({navigation}) {
-  return <Header nav={navigation} />;
+  return <MainHome nav={navigation} />;
 }
 
 const Drawer = createDrawerNavigator();
@@ -45,6 +46,7 @@ const App = () => {
           <Drawer.Screen name="pretestIntro" component={PretestIntro} />
           <Drawer.Screen name="pretestStack" component={PretestStack} />
           <Drawer.Screen name="interestStack" component={InterestStack} />
+          <Drawer.Screen name="daily" component={Daily} />
         </Drawer.Navigator>
       </NavigationContainer>
     </>

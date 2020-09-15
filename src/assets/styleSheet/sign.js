@@ -1,6 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import color from './color';
-const { width, height } = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const sign = StyleSheet.create({
   logStyleCon: {
@@ -13,19 +13,19 @@ const sign = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 30,
-    marginTop: 30
+    marginTop: 30,
   },
   bttomContainer: {
     left: 20,
-    width: width - 40    
+    width: width - 40,
   },
   popupContainer: {
-    paddingRight:0, 
-    paddingLeft: 10, 
+    paddingRight: 0,
+    paddingLeft: 10,
     paddingTop: 40,
   },
   resultContainer: {
-    height : height - 20,
+    height,
     paddingTop: '20%',
     paddingLeft: 20,
     paddingRight: 20,
@@ -40,6 +40,6 @@ const sign = StyleSheet.create({
     left: '50%',
     transform: [{translateX: -65}],
   },
-})
+});
 
-export default sign
+export default sign;
