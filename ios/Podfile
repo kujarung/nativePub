@@ -10,6 +10,8 @@ target 'publish' do
 
 
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
   target 'publishTests' do
     inherit! :complete
     # Pods for testing
