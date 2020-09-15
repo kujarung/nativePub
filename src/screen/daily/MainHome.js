@@ -40,33 +40,10 @@ export const MainHome = (props) => {
   const verticalData = [{id: 10}, {id: 20}, {id: 30}, {id: 40}];
 
   const renderHorizalItem = () => (
-    <TouchableOpacity style={daily.horizalCardContainer}>
-      <Image source={tempback1} style={{height: 140}} />
-      <View style={{padding: 15}}>
-        <View style={daily.topDesc}>
-          <Text style={[common.h6, {color: color.checkGray}]}>
-            Apr 18, 2020
-          </Text>
-          <View style={daily.levelTxt}>
-            <Text style={{color: color.primary}}>Lv.30</Text>
-          </View>
-        </View>
-        <Text
-          style={[{flexWrap: 'wrap'}, common.fontBold, common.h6]}
-          numberOfLines={2}
-          ellipsizeMode={'tail'}>
-          At least 50 people burned to death in a b At least 50 people burned to
-          death in a b At least 50 people burned to death in a b
-        </Text>
-      </View>
-    </TouchableOpacity>
-  );
-
-  const renderVerticalItem = () => (
-    <View style={daily.cardContainer}>
-      <TouchableOpacity style={daily.innerCard}>
-        <Image source={tempback2} style={[daily.innerImage]} />
-        <View style={{flex: 1}}>
+    <View style={{padding: 20}}>
+      <TouchableOpacity style={daily.horizalCardContainer}>
+        <Image source={tempback1} style={{height: 140}} />
+        <View style={{padding: 15}}>
           <View style={daily.topDesc}>
             <Text style={[common.h6, {color: color.checkGray}]}>
               Apr 18, 2020
@@ -79,30 +56,60 @@ export const MainHome = (props) => {
             style={[{flexWrap: 'wrap'}, common.fontBold, common.h6]}
             numberOfLines={2}
             ellipsizeMode={'tail'}>
-            At least 50 At leastAt least 50 At leastAt least 50 At leastAt least
-            50 At leastAt least 50 At leastAt least 50 At leastAt least 50 At
-            leastAt least 50 At leastAt least 50 At leastAt least 50 At least
+            At least 50 people burned to death in a b At least 50 people burned
+            to death in a b At least 50 people burned to death in a b
           </Text>
         </View>
       </TouchableOpacity>
-      <View style={[common.flexRow, common.Xaround, daily.bottomBack]}>
-        <View>
-          <Text style={[common.textCenter, common.h6, common.fontBold]}>
-            27개
-          </Text>
-          <Text style={{color: color.gray50, fontSize: 10}}>학습 단어 수</Text>
-        </View>
-        <View>
-          <Text style={[common.textCenter, common.h6, common.fontBold]}>
-            27개
-          </Text>
-          <Text style={{color: color.gray50}}>학습 단어 수</Text>
-        </View>
-        <View>
-          <Text style={[common.textCenter, common.h6, common.fontBold]}>
-            27개
-          </Text>
-          <Text style={{color: color.gray50}}>학습 단어 수</Text>
+    </View>
+  );
+
+  const renderVerticalItem = () => (
+    <View style={common.contentCon}>
+      <View style={daily.cardContainer}>
+        <TouchableOpacity style={daily.innerCard}>
+          <Image source={tempback2} style={[daily.innerImage]} />
+          <View style={{flex: 1}}>
+            <View style={daily.topDesc}>
+              <Text style={[common.h6, {color: color.checkGray}]}>
+                Apr 18, 2020
+              </Text>
+              <View style={daily.levelTxt}>
+                <Text style={{color: color.primary}}>Lv.30</Text>
+              </View>
+            </View>
+            <Text
+              style={[{flexWrap: 'wrap'}, common.fontBold, common.h6]}
+              numberOfLines={2}
+              ellipsizeMode={'tail'}>
+              At least 50 At leastAt least 50 At leastAt least 50 At leastAt
+              least 50 At leastAt least 50 At leastAt least 50 At leastAt least
+              50 At leastAt least 50 At leastAt least 50 At leastAt least 50 At
+              least
+            </Text>
+          </View>
+        </TouchableOpacity>
+        <View style={[common.flexRow, common.Xaround, daily.bottomBack]}>
+          <View>
+            <Text style={[common.textCenter, common.h6, common.fontBold]}>
+              27개
+            </Text>
+            <Text style={{color: color.gray50, fontSize: 10}}>
+              학습 단어 수
+            </Text>
+          </View>
+          <View>
+            <Text style={[common.textCenter, common.h6, common.fontBold]}>
+              27개
+            </Text>
+            <Text style={{color: color.gray50}}>학습 단어 수</Text>
+          </View>
+          <View>
+            <Text style={[common.textCenter, common.h6, common.fontBold]}>
+              27개
+            </Text>
+            <Text style={{color: color.gray50}}>학습 단어 수</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -162,7 +169,6 @@ export const MainHome = (props) => {
           horizontal
           data={horizalData}
           renderItem={renderHorizalItem}
-          style={{padding: 20}}
         />
       </View>
 
@@ -175,11 +181,7 @@ export const MainHome = (props) => {
             </Text>
           </TouchableOpacity>
         </View>
-        <FlatList
-          data={verticalData}
-          renderItem={renderVerticalItem}
-          style={{padding: 20}}
-        />
+        <FlatList data={verticalData} renderItem={renderVerticalItem} />
       </View>
     </>
   );

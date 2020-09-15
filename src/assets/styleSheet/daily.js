@@ -75,7 +75,6 @@ const daily = StyleSheet.create({
     width: 200,
     backgroundColor: 'white',
     borderRadius: 5,
-    marginRight: 15,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
