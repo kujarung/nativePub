@@ -207,6 +207,7 @@ export const MainHome = (props) => {
 
         <View style={{marginBottom: 21}}>
           <TabView
+            swipeEnabled={false}
             renderTabBar={RenderTabBar}
             navigationState={{index, routes}}
             onIndexChange={onIndexChange}

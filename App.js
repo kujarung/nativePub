@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {View, Button, Text, SafeAreaView} from 'react-native';
+import {View, Button, Text, SafeAreaView, StatusBar} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 import {Intro1} from 'screen/intro/Intro1';
@@ -24,32 +24,35 @@ import {MainHome} from 'screen/daily/MainHome';
 import {Daily} from 'screen/daily/Daily';
 
 function HomeScreen({navigation}) {
-  return <MainHome nav={navigation} />;
+  return (
+    <>
+      <StatusBar hidden />
+      <MainHome nav={navigation} />
+    </>
+  );
 }
 
 const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
-    <>
-      <NavigationContainer>
-        <Drawer.Navigator
-          initialRouteName="Home"
-          drawerContent={(props) => CustomDrawerContent(props)}>
-          <Drawer.Screen name="Home" component={HomeScreen} />
-          <Drawer.Screen name="Intro1" component={Intro1} />
-          <Drawer.Screen name="Intro2" component={Intro2} />
-          <Drawer.Screen name="Intro3" component={Intro3} />
-          <Drawer.Screen name="login" component={login} />
-          <Drawer.Screen name="signupPop" component={signupPop} />
-          <Drawer.Screen name="signupResult" component={signupResult} />
-          <Drawer.Screen name="pretestIntro" component={PretestIntro} />
-          <Drawer.Screen name="pretestStack" component={PretestStack} />
-          <Drawer.Screen name="interestStack" component={InterestStack} />
-          <Drawer.Screen name="daily" component={Daily} />
-        </Drawer.Navigator>
-      </NavigationContainer>
-    </>
+    <NavigationContainer>
+      <Drawer.Navigator
+        initialRouteName="Home"
+        drawerContent={(props) => CustomDrawerContent(props)}>
+        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="Intro1" component={Intro1} />
+        <Drawer.Screen name="Intro2" component={Intro2} />
+        <Drawer.Screen name="Intro3" component={Intro3} />
+        <Drawer.Screen name="login" component={login} />
+        <Drawer.Screen name="signupPop" component={signupPop} />
+        <Drawer.Screen name="signupResult" component={signupResult} />
+        <Drawer.Screen name="pretestIntro" component={PretestIntro} />
+        <Drawer.Screen name="pretestStack" component={PretestStack} />
+        <Drawer.Screen name="interestStack" component={InterestStack} />
+        <Drawer.Screen name="daily" component={Daily} />
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 };
 
