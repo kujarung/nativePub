@@ -10,20 +10,25 @@ import {
   kakaoBtn,
   fbBtn,
   googleBtn,
+  logo,
 } from 'assets/styleSheet/imageUtils';
 
 export const login = () => {
   return (
     <ScrollView style={common.mainContainer}>
       <View style={sign.bttomContainer}>
-        <View style={[sign.logStyleCon, {marginBottom: 84}]}>
-          <Text style={{color: 'white', fontSize: 30}}>로고</Text>
+        <View style={[sign.logStyleCon, {marginBottom: 64}]}>
+          <Image
+            source={logo}
+            resizeMode={'contain'}
+            style={{wdith: 84, height: 84}}
+          />
         </View>
         <View style={{marginBottom: 31}}>
           <Text style={common.h2}>Sign In</Text>
         </View>
         <View style={{marginBottom: 33}}>
-          <Text style={[common.h6, {lineHeight: 25}]}>
+          <Text style={[common.h6, common.fontThin, {lineHeight: 25}]}>
             읽고, 생각하고 성장하여 <Text style={common.fontBold}>60%</Text>의
             {'\n'}
             장벽을 뛰어 넘는 <Text style={common.fontBold}>리딩퍼센트</Text>에
@@ -67,7 +72,6 @@ export const login = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
-            marginBottom: 50,
           }}>
           <Text style={common.h7}>아직 리딩퍼센트의 회원이 아니신가요?</Text>
           <TouchableOpacity>

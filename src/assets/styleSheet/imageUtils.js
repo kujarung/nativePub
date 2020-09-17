@@ -27,3 +27,5 @@ export const ic_percent = require('../img/ic_percent.png');
 
 export const tempback1 = require('../img/tempback1.png');
 export const tempback2 = require('../img/tempbak2.png');
+
+export const logo = require('../img/logo.png');

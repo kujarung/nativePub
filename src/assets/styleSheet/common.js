@@ -5,6 +5,7 @@ const {width, height} = Dimensions.get('window');
 const common = StyleSheet.create({
   mainContainer: {
     backgroundColor: 'white',
+    flex: 1,
   },
   stackWidthContainer: {
     width,
@@ -38,34 +39,47 @@ const common = StyleSheet.create({
   },
   h2: {
     fontSize: 40,
+    fontFamily: 'NotoSansMonoCJKkr-Bold',
     fontWeight: 'bold',
   },
   h2Samll: {
     fontSize: 36,
+    fontFamily: 'NotoSansMonoCJKkr-Bold',
     fontWeight: 'bold',
   },
   h3: {
     fontSize: 26,
     fontWeight: 'bold',
+    fontFamily: 'NotoSansMonoCJKkr-Bold',
   },
   h4: {
     fontSize: 24,
+    fontFamily: 'NotoSansCJKkr-Thin',
+    fontWeight: '100',
   },
   h5: {
     fontSize: 20,
     lineHeight: 24,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   h6: {
     fontSize: 14,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   h7: {
     fontSize: 12,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   fontBold: {
+    fontFamily: 'NotoSansMonoCJKkr-Bold',
     fontWeight: 'bold',
   },
+  fontAvenir: {
+    fontFamily: 'Avenir',
+  },
   fontThin: {
-    fontWeight: '100',
+    fontFamily: 'NotoSansCJKkr-Thin',
+    fontWeight: '200',
   },
   textCenter: {
     textAlign: 'center',

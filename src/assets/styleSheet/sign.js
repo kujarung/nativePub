@@ -6,14 +6,13 @@ const sign = StyleSheet.create({
   logStyleCon: {
     width: 150,
     height: 150,
-    backgroundColor: color.primary,
     left: '50%',
     transform: [{translateX: -75}],
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 30,
-    marginTop: 77,
+    marginTop: 40,
   },
   bttomContainer: {
     left: 20,

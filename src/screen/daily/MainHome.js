@@ -94,7 +94,7 @@ export const MainHome = (props) => {
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50, fontSize: 10}}>
+            <Text style={{color: color.gray50, fontSize: 12}}>
               학습 단어 수
             </Text>
           </View>
@@ -102,13 +102,17 @@ export const MainHome = (props) => {
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50}}>학습 단어 수</Text>
+            <Text style={{color: color.gray50, fontSize: 12}}>
+              학습 단어 수
+            </Text>
           </View>
           <View>
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50}}>학습 단어 수</Text>
+            <Text style={{color: color.gray50, fontSize: 12}}>
+              학습 단어 수
+            </Text>
           </View>
         </View>
       </View>
@@ -179,7 +183,9 @@ export const MainHome = (props) => {
 
       <View style={{marginBottom: 20}}>
         <View style={daily.titleCon}>
-          <Text style={[common.h5, common.fontBold]}>추천 컨텐츠</Text>
+          <Text style={[common.h5, common.fontBold, {fontWeight: 'bold'}]}>
+            추천 컨텐츠
+          </Text>
           <TouchableOpacity>
             <Text style={[common.h7, common.fontBold, {color: color.primary}]}>
               더보기
@@ -203,7 +209,7 @@ export const MainHome = (props) => {
             {marginBottom: 21},
           ]}>
           <View>
-            <Text style={common.h2Samll}>Contents</Text>
+            <Text style={[common.h2Samll, common.fontAvenir]}>Contents</Text>
           </View>
           <View style={daily.percentContainer}>
             <Image source={ic_percent} style={common.iconSize} />

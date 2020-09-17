@@ -34,6 +34,7 @@
     "react-native-secharts": "^1.6.1",
     "react-native-svg": "^12.1.0",
     "react-native-svg-charts": "^5.4.0",
+    "react-native-swiper": "^1.6.0",
     "react-native-tab-view": "^2.15.1",
     "react-navigation": "^4.4.0"
   },
@@ -49,5 +50,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
   }
 }
