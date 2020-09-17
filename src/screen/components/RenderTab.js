@@ -2,6 +2,7 @@ import * as React from 'react';
 import {TabBar} from 'react-native-tab-view';
 import {View, Text} from 'react-native';
 import color from 'assets/styleSheet/color';
+import common from 'assets/styleSheet/common';
 
 const RenderTabBar = (props) => {
   return (
@@ -16,7 +17,9 @@ const RenderTabBar = (props) => {
           ]}>
           <Text
             style={
-              focused ? {color: 'black', fontWeight: 'bold'} : {color: '#777'}
+              focused
+                ? [{color: 'black'}, common.fontBold]
+                : {color: '#777', fontFamily: 'NotoSansCJKkr-Regular'}
             }>
             {route.title}
           </Text>
@@ -34,7 +37,10 @@ const RenderTabBar = (props) => {
         borderBottomWidth: 0,
         borderBottomColor: 'transparent',
       }}
-      tabStyle={{width: 'auto', marginLeft: 20}}
+      tabStyle={{
+        width: 'auto',
+        marginLeft: 20,
+      }}
     />
   );
 };

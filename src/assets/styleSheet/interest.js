@@ -13,8 +13,8 @@ const interest = StyleSheet.create({
       height: 1,
     },
     shadowOpacity: 0.27,
-    shadowRadius: 4.65,
-    elevation: 6,
+    shadowRadius: 1.65,
+    elevation: 13,
   },
   bottomCard: {
     paddingLeft: 10,

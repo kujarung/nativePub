@@ -51,6 +51,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/NotoSansCJKkr-Black.otf</string>
+		<string>Fonts/NotoSansCJKkr-Bold.otf</string>
+		<string>Fonts/NotoSansCJKkr-Light.otf</string>
+		<string>Fonts/NotoSansCJKkr-Medium.otf</string>
+		<string>Fonts/NotoSansCJKkr-Regular.otf</string>
+		<string>Fonts/NotoSansCJKkr-Thin.otf</string>
+	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>

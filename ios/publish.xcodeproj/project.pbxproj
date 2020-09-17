@@ -19,6 +19,9 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		93B23D1EC93068DF6E1995E2 /* libPods-publish-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A90B1997529C0046BBAA28 /* libPods-publish-tvOS.a */; };
 		C4B2E4A9CDEC42BF5CB48B6B /* libPods-publish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABDBC65646DE29A9F35E19A /* libPods-publish.a */; };
+		CD6F2454251393EF00306A4C /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CD6F2453251393EF00306A4C /* fonts */; };
+		CD6F24562513944A00306A4C /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = CD6F24552513944A00306A4C /* fonts */; };
+		CD6F2457251395B000306A4C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB61A68108700A75B9A /* Info.plist */; };
 		FD8C44078871570EB7180127 /* libPods-publish-publishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9DE1D34D06E255A231C9F4 /* libPods-publish-publishTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,8 @@
 		A5C48CC0614E45E57AEE937A /* libPods-publish-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-publish-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00C78C5974B666F98BCE605 /* Pods-publish-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-publish-tvOS.release.xcconfig"; path = "Target Support Files/Pods-publish-tvOS/Pods-publish-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BD2C711CC79A9FA86D71ADC9 /* Pods-publish-publishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-publish-publishTests.release.xcconfig"; path = "Target Support Files/Pods-publish-publishTests/Pods-publish-publishTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD6F2453251393EF00306A4C /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		CD6F24552513944A00306A4C /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FE62A461B3CF681657995E7F /* Pods-publish-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-publish-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-publish-tvOSTests/Pods-publish-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +130,7 @@
 		13B07FAE1A68108700A75B9A /* publish */ = {
 			isa = PBXGroup;
 			children = (
+				CD6F24552513944A00306A4C /* fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -159,6 +165,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CD6F2453251393EF00306A4C /* fonts */,
 				13B07FAE1A68108700A75B9A /* publish */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* publishTests */,
@@ -194,7 +201,6 @@
 				FE62A461B3CF681657995E7F /* Pods-publish-tvOSTests.debug.xcconfig */,
 				4B4F97CCBBCD957386FBCF62 /* Pods-publish-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -287,7 +293,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1160;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -318,6 +324,8 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* publish */,
@@ -327,6 +335,9 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -342,6 +353,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CD6F2454251393EF00306A4C /* fonts in Resources */,
+				CD6F2457251395B000306A4C /* Info.plist in Resources */,
+				CD6F24562513944A00306A4C /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71D94E960AB4BDC9ADAFC588 /* Pods-publish-publishTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -626,6 +641,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publish.app/publish";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -633,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD2C711CC79A9FA86D71ADC9 /* Pods-publish-publishTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = publishTests/Info.plist;
@@ -646,6 +665,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publish.app/publish";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -669,6 +691,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -690,6 +715,9 @@
 				PRODUCT_NAME = publish;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -718,6 +746,9 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -746,6 +777,9 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -773,6 +807,9 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publish-tvOS.app/publish-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -800,6 +837,9 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/publish-tvOS.app/publish-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};

@@ -17,17 +17,17 @@ export const login = () => {
   return (
     <ScrollView style={common.mainContainer}>
       <View style={sign.bttomContainer}>
-        <View style={[sign.logStyleCon, {marginBottom: 64}]}>
+        <View style={[sign.logStyleCon, {marginBottom: 44}]}>
           <Image
             source={logo}
             resizeMode={'contain'}
             style={{wdith: 84, height: 84}}
           />
         </View>
-        <View style={{marginBottom: 31}}>
-          <Text style={common.h2}>Sign In</Text>
+        <View style={{marginBottom: 20}}>
+          <Text style={[common.h2, common.fontAvenirBold]}>Sign In</Text>
         </View>
-        <View style={{marginBottom: 33}}>
+        <View style={{marginBottom: 20}}>
           <Text style={[common.h6, common.fontThin, {lineHeight: 25}]}>
             읽고, 생각하고 성장하여 <Text style={common.fontBold}>60%</Text>의
             {'\n'}

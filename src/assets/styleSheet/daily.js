@@ -20,7 +20,8 @@ const daily = StyleSheet.create({
   },
   bottomBack: {
     backgroundColor: color.likeWhite,
-    paddingVertical: 15,
+    paddingVertical: 5,
+    borderRadius: 5,
   },
   listWrap: {
     borderRadius: 20,
@@ -51,16 +52,15 @@ const daily = StyleSheet.create({
       height: 1,
     },
     shadowOpacity: 0.27,
-    shadowRadius: 4.65,
-    elevation: 6,
-    marginTop: 10,
-    marginBottom: 5,
+    shadowRadius: 1.65,
+    elevation: 8,
+    marginBottom: 15,
   },
   topDesc: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 5,
   },
   levelTxt: {
     borderRadius: 15,
@@ -81,8 +81,8 @@ const daily = StyleSheet.create({
       height: 1,
     },
     shadowOpacity: 0.27,
-    shadowRadius: 4.65,
-    elevation: 3,
+    shadowRadius: 1.65,
+    elevation: 13,
   },
   titleCon: {
     paddingHorizontal: 20,

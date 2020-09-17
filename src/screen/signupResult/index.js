@@ -14,7 +14,7 @@ export const signupResult = () => {
   return (
     <View style={[sign.resultContainer]}>
       <View style={{marginBottom: 65}}>
-        <Text style={[common.h2]}>Welcome!</Text>
+        <Text style={[common.h2, common.fontAvenirBold]}>Welcome!</Text>
         <View style={common.primarySmallLine} />
       </View>
 

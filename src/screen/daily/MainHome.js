@@ -42,8 +42,15 @@ export const MainHome = (props) => {
   const renderHorizalItem = () => (
     <View style={{paddingLeft: 20, paddingVertical: 20}}>
       <TouchableOpacity style={daily.horizalCardContainer}>
-        <Image source={tempback1} style={{height: 140}} />
-        <View style={{padding: 15}}>
+        <Image
+          source={tempback1}
+          style={{
+            height: 140,
+            borderTopLeftRadius: 5,
+            borderTopRightRadius: 5,
+          }}
+        />
+        <View style={{paddingVertical: 10, paddingHorizontal: 15}}>
           <View style={daily.topDesc}>
             <Text style={[common.h6, {color: color.checkGray}]}>
               Apr 18, 2020
@@ -53,7 +60,7 @@ export const MainHome = (props) => {
             </View>
           </View>
           <Text
-            style={[{flexWrap: 'wrap'}, common.fontBold, common.h6]}
+            style={[{flexWrap: 'wrap'}, common.h6, common.fontBold]}
             numberOfLines={2}
             ellipsizeMode={'tail'}>
             At least 50 people burned to death in a b At least 50 people burned
@@ -79,7 +86,7 @@ export const MainHome = (props) => {
               </View>
             </View>
             <Text
-              style={[{flexWrap: 'wrap'}, common.fontBold, common.h6]}
+              style={[{flexWrap: 'wrap'}, common.h6, common.fontBold]}
               numberOfLines={2}
               ellipsizeMode={'tail'}>
               At least 50 At leastAt least 50 At leastAt least 50 At leastAt
@@ -94,25 +101,19 @@ export const MainHome = (props) => {
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50, fontSize: 12}}>
-              학습 단어 수
-            </Text>
+            <Text style={[common.h7, {color: color.gray50}]}>학습 단어 수</Text>
           </View>
           <View>
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50, fontSize: 12}}>
-              학습 단어 수
-            </Text>
+            <Text style={[common.h7, {color: color.gray50}]}>학습 단어 수</Text>
           </View>
           <View>
             <Text style={[common.textCenter, common.h6, common.fontBold]}>
               27개
             </Text>
-            <Text style={{color: color.gray50, fontSize: 12}}>
-              학습 단어 수
-            </Text>
+            <Text style={[common.h7, {color: color.gray50}]}>학습 단어 수</Text>
           </View>
         </View>
       </View>
@@ -158,15 +159,15 @@ export const MainHome = (props) => {
       <View style={{marginBottom: 40}}>
         {imageList.map((val, index) => {
           return (
-            <View key={`image-${index}`} style={{marginBottom: 20}}>
+            <View key={`image-${index}`} style={{marginBottom: 40}}>
               {renderImageItem(val)}
             </View>
           );
         })}
       </View>
 
-      <View style={{marginBottom: 20}}>
-        <View style={daily.titleCon}>
+      <View style={{marginBottom: 40}}>
+        <View style={[daily.titleCon, {marginBottom: 5}]}>
           <Text style={[common.h5, common.fontBold]}>최근 본 컨텐츠</Text>
           <TouchableOpacity>
             <Text style={[common.h7, common.fontBold, {color: color.primary}]}>
@@ -182,10 +183,8 @@ export const MainHome = (props) => {
       </View>
 
       <View style={{marginBottom: 20}}>
-        <View style={daily.titleCon}>
-          <Text style={[common.h5, common.fontBold, {fontWeight: 'bold'}]}>
-            추천 컨텐츠
-          </Text>
+        <View style={[daily.titleCon, {marginBottom: 20}]}>
+          <Text style={[common.h5, common.fontBold]}>추천 컨텐츠</Text>
           <TouchableOpacity>
             <Text style={[common.h7, common.fontBold, {color: color.primary}]}>
               더보기
@@ -209,7 +208,9 @@ export const MainHome = (props) => {
             {marginBottom: 21},
           ]}>
           <View>
-            <Text style={[common.h2Samll, common.fontAvenir]}>Contents</Text>
+            <Text style={[common.h2Samll, common.fontAvenirBold]}>
+              Contents
+            </Text>
           </View>
           <View style={daily.percentContainer}>
             <Image source={ic_percent} style={common.iconSize} />

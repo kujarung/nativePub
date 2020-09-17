@@ -39,22 +39,23 @@ const common = StyleSheet.create({
   },
   h2: {
     fontSize: 40,
-    fontFamily: 'NotoSansMonoCJKkr-Bold',
+    lineHeight: 46,
+    fontFamily: 'NotoSansCJKkr-Bold',
     fontWeight: 'bold',
   },
   h2Samll: {
     fontSize: 36,
-    fontFamily: 'NotoSansMonoCJKkr-Bold',
-    fontWeight: 'bold',
+    lineHeight: 42,
   },
   h3: {
     fontSize: 26,
+    lineHeight: 32,
     fontWeight: 'bold',
-    fontFamily: 'NotoSansMonoCJKkr-Bold',
+    fontFamily: 'NotoSansCJKkr-Bold',
   },
   h4: {
     fontSize: 24,
-    fontFamily: 'NotoSansCJKkr-Thin',
+    fontFamily: 'NotoSansCJKkr-Bold',
     fontWeight: '100',
   },
   h5: {
@@ -64,18 +65,28 @@ const common = StyleSheet.create({
   },
   h6: {
     fontSize: 14,
+    lineHeight: 20,
     fontFamily: 'NotoSansCJKkr-Regular',
   },
   h7: {
     fontSize: 12,
+    lineHeight: 18,
     fontFamily: 'NotoSansCJKkr-Regular',
   },
   fontBold: {
-    fontFamily: 'NotoSansMonoCJKkr-Bold',
-    fontWeight: 'bold',
+    fontFamily: 'NotoSansCJKkr-Bold',
+    fontWeight: '800',
+  },
+  fontBlack: {
+    fontFamily: 'NotoSansCJKkr-Black',
+    fontWeight: '800',
   },
   fontAvenir: {
-    fontFamily: 'Avenir',
+    fontFamily: 'Avenir-Book',
+  },
+  fontAvenirBold: {
+    fontFamily: 'Avenir-Bold',
+    fontWeight: 'bold',
   },
   fontThin: {
     fontFamily: 'NotoSansCJKkr-Thin',
@@ -120,8 +131,8 @@ const common = StyleSheet.create({
     height: 20,
   },
   iconBig: {
-    width: 24,
-    height: 24,
+    width: 16,
+    height: 16,
   },
   restIcon: {
     width: 17,
@@ -147,8 +158,8 @@ const common = StyleSheet.create({
       height: 1,
     },
     shadowOpacity: 0.27,
-    shadowRadius: 4.65,
-    elevation: 6,
+    shadowRadius: 1.65,
+    elevation: 13,
   },
   contentCon: {
     paddingLeft: 20,

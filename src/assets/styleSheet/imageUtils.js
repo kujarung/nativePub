@@ -29,3 +29,6 @@ export const tempback1 = require('../img/tempback1.png');
 export const tempback2 = require('../img/tempbak2.png');
 
 export const logo = require('../img/logo.png');
+export const logoImg = require('../img/logo-img.png');
+export const logoTxt = require('../img/logo-txt.png');
+export const bottomBack = require('../img/bottom-back.png');

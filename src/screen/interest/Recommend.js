@@ -124,7 +124,9 @@ export const Recommend = () => {
     <View style={common.stackWidthContainer}>
       <ScrollView>
         <View style={[common.contentCon, {marginTop: 22}]}>
-          <Text style={[common.h2, {marginBottom: 25}]}>Result</Text>
+          <Text style={[common.h2, common.fontAvenirBold, {marginBottom: 25}]}>
+            Result
+          </Text>
           <View style={{marginBottom: 15}}>
             <Image source={icRest} style={common.restIcon} />
           </View>

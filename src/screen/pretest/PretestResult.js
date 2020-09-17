@@ -11,7 +11,9 @@ export const PretestResult = () => {
   return (
     <ScrollView style={[common.stackWidthContainer]}>
       <View style={pretest.contentContainer}>
-        <Text style={[common.h2, {marginBottom: 10}]}>Result</Text>
+        <Text style={[common.h2, common.fontAvenirBold, {marginBottom: 10}]}>
+          Result
+        </Text>
         <View style={{marginBottom: 40, lineHeight: 26}}>
           <Text style={[common.h6, common.fontThin]}>
             닉네임님은 <Text style={common.fontBold}>42%</Text>의 콘텐츠을 읽을
