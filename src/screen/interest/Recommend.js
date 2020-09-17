@@ -51,7 +51,7 @@ export const Recommend = () => {
   ]);
 
   const renderItem = (data) => (
-    <View style={common.contentCon}>
+    <View style={[common.contentCon, {paddingBottom: 10, paddingTop: 10}]}>
       <View style={interest.cardContainer}>
         <TouchableOpacity style={interest.innerCard}>
           <Image
@@ -129,7 +129,7 @@ export const Recommend = () => {
             <Image source={icRest} style={common.restIcon} />
           </View>
           <View style={{marginBottom: 25}}>
-            <Text style={[common.h6, common.fontThin]}>
+            <Text style={[common.h6, common.fontThin, {lineHeight: 26}]}>
               약 <Text style={common.fontBold}>42%</Text>의 콘텐츠들 중에서
               {'\n'}
               닉네임님께서{' '}
@@ -143,7 +143,7 @@ export const Recommend = () => {
           <Text style={[common.h5, common.fontBold]}>추천 콘텐츠</Text>
         </View>
 
-        <View style={{paddingBottom: 20}}>
+        <View>
           <TabView
             renderTabBar={RenderTabBar}
             navigationState={{index, routes}}
@@ -160,7 +160,7 @@ export const Recommend = () => {
             <View style={{marginBottom: 10}}>
               <Image source={icRest} style={common.restIcon} />
             </View>
-            <Text style={[common.h6, common.fontThin]}>
+            <Text style={[common.h6, common.fontThin, {lineHeight: 26}]}>
               혹시 마음에 들지 않으세요?{'\n'}
               그렇다면 <Text style={common.fontBold}>홈 화면</Text>에서 매일
               업데이트 되는{'\n'}

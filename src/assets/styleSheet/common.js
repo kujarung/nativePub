@@ -4,7 +4,6 @@ const {width, height} = Dimensions.get('window');
 
 const common = StyleSheet.create({
   mainContainer: {
-    flex: 1,
     backgroundColor: 'white',
   },
   stackWidthContainer: {
@@ -63,10 +62,10 @@ const common = StyleSheet.create({
     fontSize: 12,
   },
   fontBold: {
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
   fontThin: {
-    fontWeight: '200',
+    fontWeight: '100',
   },
   textCenter: {
     textAlign: 'center',
@@ -112,7 +111,7 @@ const common = StyleSheet.create({
   },
   restIcon: {
     width: 17,
-    height: 14,
+    height: 15,
   },
   backBtnContainer: {
     left: 20,

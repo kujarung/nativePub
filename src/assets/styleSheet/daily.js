@@ -107,6 +107,7 @@ const daily = StyleSheet.create({
   },
   linearGradient: {
     height: 320,
+    borderRadius: 5,
   },
   buttonText: {
     fontSize: 18,
@@ -119,6 +120,7 @@ const daily = StyleSheet.create({
   imageSize: {
     width: '100%',
     height: 320,
+    borderRadius: 25,
   },
   imageSizeLong: {
     width: '100%',
@@ -126,6 +128,7 @@ const daily = StyleSheet.create({
   },
   linearGradientLong: {
     height: 540,
+    borderRadius: 5,
   },
 });
 

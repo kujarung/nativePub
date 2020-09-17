@@ -13,7 +13,7 @@ const sign = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 30,
-    marginTop: 30,
+    marginTop: 77,
   },
   bttomContainer: {
     left: 20,

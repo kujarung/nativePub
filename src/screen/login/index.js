@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, SafeAreaView} from 'react-native';
+import {View, Text, Image, SafeAreaView, ScrollView} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import btn from 'assets/styleSheet/btn';
 import sign from 'assets/styleSheet/sign';
@@ -14,16 +14,16 @@ import {
 
 export const login = () => {
   return (
-    <SafeAreaView style={common.mainContainer}>
+    <ScrollView style={common.mainContainer}>
       <View style={sign.bttomContainer}>
-        <View style={sign.logStyleCon}>
+        <View style={[sign.logStyleCon, {marginBottom: 84}]}>
           <Text style={{color: 'white', fontSize: 30}}>로고</Text>
         </View>
-        <View style={{marginBottom: 29}}>
+        <View style={{marginBottom: 31}}>
           <Text style={common.h2}>Sign In</Text>
         </View>
         <View style={{marginBottom: 33}}>
-          <Text style={[common.h6, common.fontThin]}>
+          <Text style={[common.h6, {lineHeight: 25}]}>
             읽고, 생각하고 성장하여 <Text style={common.fontBold}>60%</Text>의
             {'\n'}
             장벽을 뛰어 넘는 <Text style={common.fontBold}>리딩퍼센트</Text>에
@@ -62,7 +62,13 @@ export const login = () => {
           </Text>
         </TouchableOpacity>
 
-        <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginBottom: 50,
+          }}>
           <Text style={common.h7}>아직 리딩퍼센트의 회원이 아니신가요?</Text>
           <TouchableOpacity>
             <Text style={[common.primaryEmasis, {marginLeft: 5}]}>
@@ -71,6 +77,6 @@ export const login = () => {
           </TouchableOpacity>
         </View>
       </View>
-    </SafeAreaView>
+    </ScrollView>
   );
 };

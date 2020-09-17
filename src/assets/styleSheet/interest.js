@@ -15,8 +15,6 @@ const interest = StyleSheet.create({
     shadowOpacity: 0.27,
     shadowRadius: 4.65,
     elevation: 6,
-    marginTop: 10,
-    marginBottom: 5,
   },
   bottomCard: {
     paddingLeft: 10,

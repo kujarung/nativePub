@@ -22,11 +22,11 @@ export const signupResult = () => {
         <Image source={avatar} style={[sign.avatarImage, sign.avatarCenter]} />
       </View>
 
-      <Text style={{marginBottom: 10}}>
+      <View style={{marginBottom: 10}}>
         <Image source={icRest} style={common.restIcon} />
-      </Text>
+      </View>
 
-      <Text style={[common.h6, common.fontThin]}>
+      <Text style={[common.h6, common.fontThin, {lineHeight: 25}]}>
         안녕하세요, <Text style={common.fontBold}>닉네임</Text>님! {'\n'}
         리딩퍼센트에 합류하신 것을 진심으로{' '}
         <Text style={common.fontBold}>환영합니다.</Text> :) {'\n'}
