@@ -58,6 +58,10 @@ const common = StyleSheet.create({
     fontFamily: 'NotoSansCJKkr-Bold',
     fontWeight: '100',
   },
+  h4Small: {
+    fontSize: 22,
+    lineHeight: 28,
+  },
   h5: {
     fontSize: 20,
     lineHeight: 24,
@@ -86,7 +90,6 @@ const common = StyleSheet.create({
   },
   fontAvenirBold: {
     fontFamily: 'Avenir-Bold',
-    fontWeight: 'bold',
   },
   fontThin: {
     fontFamily: 'NotoSansCJKkr-Thin',
