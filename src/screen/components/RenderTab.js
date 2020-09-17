@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {TabBar} from 'react-native-tab-view';
 import {View, Text} from 'react-native';
+import color from 'assets/styleSheet/color';
 
 const RenderTabBar = (props) => {
   return (
@@ -9,7 +10,9 @@ const RenderTabBar = (props) => {
         <View
           style={[
             {paddingBottom: 10, borderBottomWidth: 2, marginBottom: 10},
-            focused ? {borderBottomColor: '#F91D3E'} : {borderColor: 'white'},
+            focused
+              ? {borderBottomColor: color.primary}
+              : {borderColor: 'white'},
           ]}>
           <Text
             style={

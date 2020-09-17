@@ -35,7 +35,12 @@ export const Daily = (props) => {
                       <Text style={daily.labelFont}>Lv.30</Text>
                     </View>
                   </View>
-                  <Text style={[common.h4, common.fontBold, {color: 'white'}]}>
+                  <Text
+                    style={[
+                      common.h4,
+                      common.fontBold,
+                      {color: 'white', lineHeight: 32},
+                    ]}>
                     At least 50 people {'\n'}
                     burned to death in a bus {'\n'}
                     collision in Ghana

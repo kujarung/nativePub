@@ -40,7 +40,7 @@ export const MainHome = (props) => {
   const verticalData = [{id: 10}, {id: 20}, {id: 30}, {id: 40}];
 
   const renderHorizalItem = () => (
-    <View style={{padding: 20}}>
+    <View style={{paddingLeft: 20, paddingVertical: 20}}>
       <TouchableOpacity style={daily.horizalCardContainer}>
         <Image source={tempback1} style={{height: 140}} />
         <View style={{padding: 15}}>
@@ -134,7 +134,12 @@ export const MainHome = (props) => {
               <Text style={daily.labelFont}>Lv.30</Text>
             </View>
           </View>
-          <Text style={[common.h4, common.fontBold, {color: 'white'}]}>
+          <Text
+            style={[
+              common.h4,
+              common.fontBold,
+              {color: 'white', lineHeight: 32},
+            ]}>
             At least 50 people {'\n'}
             burned to death in a bus {'\n'}
             collision in Ghana

@@ -1,5 +1,5 @@
 const color = {
-  primary: '#F91D3E',
+  primary: '#1769FF',
   fontGray: '#91909A',
   naverGreen: '#1ACE60',
   kakaoYellow: '#FAE102',
