@@ -29,8 +29,11 @@ const btn = StyleSheet.create({
     color: 'white',
   },
   leftBtnImg: {
+    width: 24,
+    height: 24,
     position: 'absolute',
     left: 32,
+    resizeMode: 'contain',
   },
   backgruondNaverBtn: {
     backgroundColor: color.naverGreen,
