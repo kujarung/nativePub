@@ -17,6 +17,8 @@ const daily = StyleSheet.create({
   labelFont: {
     color: color.primary,
     fontSize: 14,
+    lineHeight: 18,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   bottomBack: {
     backgroundColor: color.likeWhite,
@@ -82,7 +84,7 @@ const daily = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 13,
+    elevation: 8,
   },
   titleCon: {
     paddingHorizontal: 20,

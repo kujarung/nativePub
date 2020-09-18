@@ -9,9 +9,14 @@ import {icRest} from 'assets/styleSheet/imageUtils';
 
 export const PretestResult = () => {
   return (
-    <ScrollView style={[common.stackWidthContainer]}>
+    <View style={[common.mainContainer]}>
       <View style={pretest.contentContainer}>
-        <Text style={[common.h2, common.fontAvenirBold, {marginBottom: 10}]}>
+        <Text
+          style={[
+            common.h2,
+            common.fontAvenirBold,
+            {marginBottom: 10, marginTop: 30},
+          ]}>
           Result
         </Text>
         <View style={{marginBottom: 40, lineHeight: 26}}>
@@ -30,7 +35,7 @@ export const PretestResult = () => {
           />
           <View style={pretest.innerPercent}>
             <Text style={[common.h2, common.textCenter]}>
-              42<Text style={[common.h7]}>%</Text>
+              42<Text style={[common.h7, {lineHeight: 46}]}>%</Text>
             </Text>
             <Text
               style={[common.h7, common.textCenter, {color: color.fontGray}]}>
@@ -64,6 +69,6 @@ export const PretestResult = () => {
           <BtnPrimaryBac btnTxt={'설문조사 하기'} />
         </View>
       </View>
-    </ScrollView>
+    </View>
   );
 };

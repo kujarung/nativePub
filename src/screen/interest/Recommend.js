@@ -64,7 +64,7 @@ export const Recommend = () => {
                 Apr 18, 2020
               </Text>
               <View style={interest.levelTxt}>
-                <Text style={{color: color.primary}}>Lv.30</Text>
+                <Text style={[common.h6, {color: color.primary}]}>Lv.30</Text>
               </View>
             </View>
             <Text
@@ -147,6 +147,7 @@ export const Recommend = () => {
 
         <View>
           <TabView
+            swipeEnabled={false}
             renderTabBar={RenderTabBar}
             navigationState={{index, routes}}
             onIndexChange={onIndexChange}

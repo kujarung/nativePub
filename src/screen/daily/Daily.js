@@ -12,7 +12,7 @@ export const Daily = (props) => {
     <ScrollView style={{backgroundColor: 'white'}}>
       <Header nav={props.nav} />
       <View style={[common.contentCon, {marginBottom: 20}]}>
-        <Text style={common.h2Samll}>오늘의 콘텐츠</Text>
+        <Text style={[common.h2Samll, common.fontBold]}>오늘의 콘텐츠</Text>
       </View>
       {imgList.map((val, index) => {
         return (

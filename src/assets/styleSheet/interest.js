@@ -14,7 +14,7 @@ const interest = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 13,
+    elevation: 8,
   },
   bottomCard: {
     paddingLeft: 10,
@@ -24,13 +24,15 @@ const interest = StyleSheet.create({
     backgroundColor: color.likeWhite,
   },
   bottomTxt: {
-    height: 28,
+    fontSize: 12,
+    lineHeight: 18,
     borderColor: color.borderGray,
     borderWidth: 1,
     paddingHorizontal: 12,
     paddingVertical: 4,
     marginRight: 10,
     borderRadius: 15,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   innerCard: {
     paddingLeft: 10,
@@ -38,6 +40,7 @@ const interest = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingBottom: 10,
   },
   levelTxt: {
     borderRadius: 15,
@@ -57,7 +60,7 @@ const interest = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 5,
   },
   listContainer: {
     flexDirection: 'row',
@@ -76,9 +79,11 @@ const interest = StyleSheet.create({
   },
   selectItemFont: {
     fontSize: 16,
+    lineHeight: 22,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   selectedFont: {
-    fontWeight: 'bold',
+    fontFamily: 'NotoSansCJKkr-Bold',
     color: color.primary,
   },
   selectedCotainer: {

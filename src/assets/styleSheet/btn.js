@@ -20,6 +20,7 @@ const btn = StyleSheet.create({
   },
   btnFont: {
     fontSize: 18,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   btnFontPrimary: {
     color: color.primary,
@@ -51,7 +52,7 @@ const btn = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 3,
+    elevation: 8,
   },
   bottomBtnCon: {
     position: 'absolute',
@@ -76,7 +77,7 @@ const btn = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 13,
+    elevation: 8,
     borderRadius: 20,
     backgroundColor: 'white',
   },

@@ -19,7 +19,9 @@ export const Header = (props) => {
   return (
     <SafeAreaView>
       <View style={style.headerContainer}>
-        <TouchableOpacity onPress={openingDwarer}>
+        <TouchableOpacity
+          onPress={openingDwarer}
+          style={{width: 40, height: 40, justifyContent: 'center'}}>
           <Image source={sidelist} style={common.iconBig} />
         </TouchableOpacity>
         <View style={{flexDirection: 'row'}}>

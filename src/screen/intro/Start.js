@@ -218,7 +218,7 @@ export const Start = () => {
               <View>
                 <View
                   style={{
-                    width: 60,
+                    width: 95,
                     borderBottomColor: 'rgba(23, 105,255, .5)',
                     borderBottomWidth: 8,
                     bottom: 5,

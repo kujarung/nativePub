@@ -56,7 +56,9 @@ export const MainHome = (props) => {
               Apr 18, 2020
             </Text>
             <View style={daily.levelTxt}>
-              <Text style={{color: color.primary}}>Lv.30</Text>
+              <Text style={[daily.labelFont, {color: color.primary}]}>
+                Lv.30
+              </Text>
             </View>
           </View>
           <Text
@@ -82,7 +84,9 @@ export const MainHome = (props) => {
                 Apr 18, 2020
               </Text>
               <View style={daily.levelTxt}>
-                <Text style={{color: color.primary}}>Lv.30</Text>
+                <Text style={[daily.labelFont, {color: color.primary}]}>
+                  Lv.30
+                </Text>
               </View>
             </View>
             <Text

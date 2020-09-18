@@ -40,12 +40,12 @@ const common = StyleSheet.create({
   h2: {
     fontSize: 40,
     lineHeight: 46,
-    fontFamily: 'NotoSansCJKkr-Bold',
-    fontWeight: 'bold',
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   h2Samll: {
     fontSize: 36,
     lineHeight: 42,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   h3: {
     fontSize: 26,
@@ -99,6 +99,9 @@ const common = StyleSheet.create({
     textAlign: 'center',
   },
   primaryEmasis: {
+    fontSize: 12,
+    lineHeight: 18,
+    fontFamily: 'NotoSansCJKkr-Regular',
     color: color.primary,
     textDecorationLine: 'underline',
     textDecorationStyle: 'solid',
@@ -107,7 +110,8 @@ const common = StyleSheet.create({
   checkContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 17,
+    paddingTop: 8,
+    paddingBottom: 8,
   },
   checkImage: {
     width: 16,
@@ -116,12 +120,16 @@ const common = StyleSheet.create({
   },
   checkTxt: {
     fontSize: 12,
-    fontWeight: 'bold',
+    lineHeight: 18,
+    fontFamily: 'NotoSansCJKkr-Bold',
+    fontWeight: '800',
     color: 'black',
   },
   uncheckedTxt: {
     fontSize: 12,
+    lineHeight: 18,
     color: color.checkGray,
+    fontFamily: 'NotoSansCJKkr-Regular',
   },
   primarySmallLine: {
     width: 30,
@@ -162,7 +170,7 @@ const common = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 13,
+    elevation: 8,
   },
   contentCon: {
     paddingLeft: 20,

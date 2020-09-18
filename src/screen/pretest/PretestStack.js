@@ -39,8 +39,12 @@ const headerLeft = (navigation, noLeft) => {
   return noLeft ? null : (
     <TouchableOpacity
       onPress={() => navigation.goBack()}
-      style={common.backBtnContainer}>
-      <Image source={backBtn} />
+      style={[
+        common.backBtnContainer,
+        common.XYcenter,
+        {height: 40, width: 30},
+      ]}>
+      <Image source={backBtn} style={{width: 10, height: 18}} />
     </TouchableOpacity>
   );
 };

@@ -27,7 +27,11 @@ export const CustomDrawerContent = (props) => {
       <DrawerItemList
         activeBackgroundColor={'transparent'}
         activeTintColor={'black'}
-        labelStyle={{fontSize: 18, color: '#777777'}}
+        labelStyle={{
+          fontSize: 18,
+          color: '#777777',
+          fontFamily: 'Avenir-Book',
+        }}
         {...props}
       />
     </DrawerContentScrollView>

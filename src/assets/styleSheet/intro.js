@@ -28,7 +28,7 @@ const intro = StyleSheet.create({
     },
     shadowOpacity: 0.27,
     shadowRadius: 1.65,
-    elevation: 3,
+    elevation: 8,
     position: 'absolute',
     bottom: 91,
     height: height - 150,
